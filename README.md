@@ -25,7 +25,7 @@ Click <a href="https://t.me/TLMusicDownloader_bot">@TLMusicDownloader_bot</a> to
 
 ## Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/eo792/yt-to-mp3)
 
 
 ## Screenshot
