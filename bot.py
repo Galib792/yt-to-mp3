@@ -73,6 +73,7 @@ class Chat:
         self.messages = {
             'start':'🤖 Hello, '+ self.user_name +'!\n\n'
                     '📩 Send me:\n\n'
+                    '📱 Join @Tips_Tik and @Tips_tik_discussion\n\n'
                     '"*/music* _song name_"  or\n'
                     '"*/music* _musician name - song name_"\n\n'
                     'to order some music. 🎶',
@@ -128,7 +129,7 @@ class Chat:
             try:
                 self.send_audio(file_name)
                 self.delete_message(downloading_message)
-                self.send_message('✅ Sucess!')
+                self.send_message('✅ Sucess!.Thanks to @Tips_Tik')
                 print ("\nSucess!\n")
             except:
                 print("\nError")
