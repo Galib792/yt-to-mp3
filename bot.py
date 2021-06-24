@@ -73,10 +73,9 @@ class Chat:
         self.messages = {
             'start':'🤖 Hello, '+ self.user_name +'!\n\n'
                     '📩 Send me:\n\n'
-                    '📱 Join'"*@Tips_Tik*_and_*@Tips_tik_discussion*\n\n'
                     '"*/music* _song name_"  or\n'
                     '"*/music* _musician name - song name_"\n\n'
-                    'to order some music. 🎶',
+                    '📱 Join'"*@Tips_Tik*_and_*@Tips_tik_discussion*',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'
