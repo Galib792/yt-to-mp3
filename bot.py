@@ -86,7 +86,7 @@ class Chat:
                     'Try: "*/music* _song name_"\n'
                     'or: "*/music* _musician name - song name_"',
 
-            'too_long':'‼️ *Oops! Video too long to convert!*\n'
+            'too_long':'*‼️ Oops! Video too long to convert!*\n'
                     'Order something 30 minutes or less.'
 
 
