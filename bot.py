@@ -15,7 +15,7 @@ load_dotenv(dotenv_path)
 TOKEN = os.environ.get("TOKEN")
 bot = telepotpro.Bot(TOKEN)
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@ForceSubscriber_UBot']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@@Music2yt_Bot']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
