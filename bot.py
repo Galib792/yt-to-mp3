@@ -3,6 +3,7 @@ import os
 import json
 import youtube_dl
 import telepotpro
+from pyrogram import Client, filters
 from random import randint
 from multiprocessing import Process
 from youtubesearchpython import SearchVideos
