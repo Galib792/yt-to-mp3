@@ -15,11 +15,6 @@
       "description": "Make a bot at BotFather http://telegram.dog/BotFather and get the token of your bot",
       "value": "",
       "required": true
-       }, 
- "UPDATES_CHANNEL": {
-            "description": "Your bot updates channel username without @ or leave empty",
-            "value": "",
-            "required": false
     }
   }
 }
