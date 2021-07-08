@@ -3,7 +3,6 @@ import os
 import json
 import youtube_dl
 import telepotpro
-from pyrogram import Client, filters
 from random import randint
 from multiprocessing import Process
 from youtubesearchpython import SearchVideos
@@ -15,35 +14,6 @@ load_dotenv(dotenv_path)
 
 TOKEN = os.environ.get("TOKEN")
 bot = telepotpro.Bot(TOKEN)
-
-@Client.on_message(filters.incoming & filters.command(['start', 'start@@Music2yt_Bot']))
-def _start(client, message):
-    update_channel = UPDATES_CHANNEL
-    if update_channel:
-        try:
-            user = client.get_chat_member(update_channel, message.chat.id)
-            if user.status == "kicked":
-               client.send_message(
-                   chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/UniversalBotsSupport).",
-                   parse_mode="markdown",
-                   disable_web_page_preview=True
-               )
-               return
-        except UserNotParticipant:
-            client.send_message(
-                chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
-                        ]
-                    ]
-                ),
-                parse_mode="markdown"
-            )
-            return
 
 class Music:
     def __init__(self, user_input, msg):
